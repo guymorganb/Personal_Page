@@ -223,7 +223,7 @@ article{
   margin: 0 0 15px 0;
 }
 .container:nth-of-type(1){
-  flex: 0 0 300px;
+  flex: 0 2 700px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
@@ -253,7 +253,7 @@ article{
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
-  margin-right: calc(100vw - 408px);
+  
 }
 #label{
   margin-top: 25px;
@@ -440,11 +440,6 @@ footer img{            /* resize the icons */
 }
   
 
-@media screen and (max-width: 1356px){
-  .container:nth-of-type(4){
-    margin-right: calc(100vw - 408px);
-    
-  }
-}
+
 
   /* Styling for header */
