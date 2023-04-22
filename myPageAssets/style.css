@@ -11,7 +11,7 @@
     --dark: #0D598B;
     --light: olive;
     --elshadow: 0 0 3em #63AAC0, -10px 10px 2em olive;
-    --backdrop: linear-gradient(rgb(126, 100, 98) 0%, #0D598B 100%);
+    --backdrop: linear-gradient(rgb(126, 100, 98), #0D598B 100%);
     --mainBackdrop: linear-gradient(#63AAC0 0%, #32a1ce 100%);
   }
 body{
@@ -109,7 +109,7 @@ header span:nth-child(9){
 header span:nth-child(10){
   animation-delay: 3.1s;
 }
-nav{
+#topNavBar{
   display: flex;
   flex-direction: column;
   padding: 0 0 0 25px;    /* moves nav bar to right */
@@ -153,7 +153,7 @@ main{
   display: block
 }
 #none{
-  min-height: 333px;
+  min-height: 100px;
 }
 
 section#About-Me{   /* container for About-Me section */
@@ -198,8 +198,6 @@ b h2{    /* the about me letters */
 .p{
   padding: 0 0 0 10px
 }
-
-
 #Portfolio{    /* main container of portfolio */
   padding: 15px 15px 15px 15px;
   margin: 0 10px 0 10px;
@@ -207,20 +205,17 @@ b h2{    /* the about me letters */
   display: flex;
   flex-flow: row-reverse;
   flex-wrap: wrap;
-  justify-content: flex-end;
   min-height: 900px;
   /*background: transparentvar(--backdrop);*/ 
   border-radius: 30px / 120px;
   box-shadow: var(--elshadow);
   overflow: hidden;
+  justify-content: space-around ;
 }
 aside{
   border-left: 5px var(--dark) groove;
   max-height: 140px;
   margin-left: 5px;;
-}
-#portfolio, h2{
-  
 }
 article{
   display: flex;
@@ -228,34 +223,37 @@ article{
   margin: 0 0 15px 0;
 }
 .container:nth-of-type(1){
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
+  
 }
 .container:nth-of-type(2){
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
 }
 .container:nth-of-type(3){
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
 }
 .container:nth-of-type(4){
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
+  
 }
 .container:nth-of-type(5){
-  flex: 0 0 400px;
+  flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
   filter: invert(1);
+  margin-right: calc(100vw - 408px);
 }
 #label{
   margin-top: 25px;
@@ -289,6 +287,126 @@ article{
   margin: 25px 0 0 0;
 }
 
+#Contact {          /* the whole contact box */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  display: block;
+  width: fit-content;
+  justify-content: left;
+  margin-left: 15px;
+  flex-wrap: nowrap;
+  box-shadow: var(--elshadow);
+  border-radius: 9px;
+  color: blue;
+  text-align: center;
+  flex: 1 2 300px;
+}
+.formcontainer h2 {   /* controls the Contact text */
+  text-decoration: underline;
+  font-size: xx-large;
+  text-align: center; 
+}
+form div {            /* specifies the  divs inside the form */
+  margin: 1em ;
+  display: flex;
+}
+.formcontainer{       /* the stuff inside the form */
+  filter: invert(1);
+}
+label {               /* controls alignment of the labels */
+  display: flex;
+  flex-direction: row;
+  width: 65px;
+}
+
+input, select, textarea {  /* controls alignment of the text areas in relation to the labels */
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+textarea {          /* the sizing of the text area */
+  height: 10em;
+  width: 20em;
+}
+.messages {
+  border: 3px solid var(--dark);
+  border-radius: 25px;
+  box-shadow: var(--elshadow);
+  inset: 1em;
+  color: red;
+  padding: 2em;
+  margin-bottom: 2em;
+  text-align: left;
+}
+footer{
+    display: flex;
+    place-content: center;
+    margin-bottom: 50px;
+    
+}
+footer #activator {
+  padding: 1em;
+  border: 3px solid black;
+  box-shadow: var(--elshadow);
+  border-radius: 100%;
+  color: var(--light)
+}
+.activator:hover{
+  cursor: pointer;
+  background-color: var(--light);
+}
+footer img{            /* resize the icons */
+  width:100%;
+  max-width: 45px;
+}
+.activator{
+  width:100%;
+  max-width: 90px;
+}
+#slideBar{
+  background:linear-gradient(rgb(126, 100, 98), #0D598B 100%);
+  border-radius: 0 5em 5em 0;
+  padding: .5em;
+  clip-path: ellipse(50% 50% at -50% 50%);
+}
+#slideBar ul{
+  display: flex;
+  list-style:none;
+  margin: 0;
+  padding:0;
+  flex-wrap: wrap;
+}
+#slideOut li a:hover{
+  background:olive; ;
+}
+#slideOut li a{
+  display: block;
+  padding: .5em;
+  margin: 0 .5em;
+  border-radius: 50%;
+  transition: background-color .3s;
+}
+#slideOut img{
+  opacity: 0;
+  transform: translate(-10px);
+}
+
+@media screen and (max-width: 407px){
+  .container:nth-of-type(4){
+    margin-left: calc(100vw - 408px);
+  }
+  .container:nth-of-type(5){
+    margin-left: calc(100vw - 408px);
+  }
+}
+@media screen and (max-width: 328px){
+  .container:nth-of-type(4){
+    margin-right: calc(100vw - 100vw);
+  }
+  .container:nth-of-type(5){
+    margin-left: calc(100vw - 220px);
+  }
+}
+
 
 @media screen and (max-width: 860px){
    #Nav{
@@ -307,9 +425,6 @@ article{
   header{
     justify-content: flex-end;
   }
-  
-}
-@media screen and (max-width: 860px){
   .text{
     padding-left: 35px;
 
@@ -318,5 +433,18 @@ article{
     flex-wrap: wrap;
   
   }
+  .container:nth-of-type(4){
+    margin-right: calc(100vw - 408px);
+    margin-right: calc(100vw - 408px);
+  }
 }
+  
+
+@media screen and (max-width: 1356px){
+  .container:nth-of-type(4){
+    margin-right: calc(100vw - 408px);
+    
+  }
+}
+
   /* Styling for header */

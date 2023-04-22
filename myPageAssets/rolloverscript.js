@@ -1,8 +1,4 @@
-'use strict'
 
-
-
-"use strict";
 $(document).ready(() => {
 
     // process each img tag
