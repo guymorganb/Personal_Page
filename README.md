@@ -5,8 +5,8 @@
 - This was created to be used as a learning opportuniy to use HTML and CSS, I decided to use it as an opportunkty to practice my knowledge of JavaScript also.
 - This page was created to serve as a quick reference to grow my understanding of the elements it includes, and grow my skills designing the web.
 - This project solves the problem of a very basic webpage, to display information about myself. 
-- I expanded my fundamental knowledge around GitHub workflow, HTML & CSS syntax and use, structuring the README document, and using javascript.
-- The layout of this page serves as a staring point for me improve my ddesign skills and better structure the layout of my page, additionally I like to draw using vectors so I will be able to add more to this page and import updated SVG. 
+- I expanded my fundamental knowledge around GitHub workflow, HTML & CSS syntax and use, structuring the README document, and using JavaScript.
+- The layout of this page serves as a staring point for me improve my design skills and better structure the layout of my page, additionally I like to draw using vectors so I will be able to add more to this page and import updated SVG. 
 
 ## Table of Contents (N/A)
 - [Installation](#installation)
@@ -20,11 +20,10 @@ This webpage can be navigated to and acessed with a browser. It does not require
 
 ## Usage
 
-This page should be used for learning and demonstration purposes.
-This page should also be used for display of personal information, 
-See below screenshot.
+- This page should be used for learning and demonstration purposes.
+- This page should also be used for display of personal information.
 
-Navigate to the following link to access the document.
+- Navigate to the following link to access the document.
 https://guymorganb.github.io/Personal_Page/
 
 
