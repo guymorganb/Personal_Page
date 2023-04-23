@@ -19,9 +19,9 @@ $(document).ready(() => {
             img.src = oldURL   // hover out
            }
         ); 
-        $("#image_rollovers img").mouseover( 
-            () => img.src = newURL )
-        $("#image_rollovers img").mouseout( 
-            () => img.src = oldURL)
+       // $("#image_rollovers img").mouseover( 
+       //     () => img.src = newURL )
+       // $("#image_rollovers img").mouseout( 
+       //     () => img.src = oldURL)
     });
 });
