@@ -2,7 +2,7 @@
 
 ## Description
 
-- This was created to be used as a learning opportuniy to use HTML and CSS, I decided to use it as an opportunkty to practice my knowledge of JavaScript also.
+- This was created to be used as a learning opportuniy to use HTML and CSS, I decided to use it as an opportunkty to practice my knowledge of JavaScript also. Im not the most gifted at astetic desig, but I did the best I could for a first try, I hope to learn more and improve.
 - This page was created to serve as a quick reference to grow my understanding of the elements it includes, and grow my skills designing the web.
 - This project solves the problem of a very basic webpage, to display information about myself. 
 - I expanded my fundamental knowledge around GitHub workflow, HTML & CSS syntax and use, structuring the README document, and using JavaScript.
