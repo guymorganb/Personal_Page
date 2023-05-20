@@ -30,7 +30,7 @@ for (index; index < length; index++){
         var posX = window.pageYOffset * target[index].dataset.ratex;
         var posY = window.pageYOffset * target[index].dataset.ratey;
         
-        target[index.style.transform] ='translate3d('+posX+'px, '+posY+'px, 0px)';
+        //target[index.style.transform] ='translate3d('+posX+'px, '+posY+'px, 0px)';
     }
 }
 })

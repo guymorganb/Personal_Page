@@ -6,16 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guy Morgan B - Home</title>
     <link rel="stylesheet" href="./myPageAssets/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/CSSRulePlugin.min.js" integrity="sha512-zaTjCyJwbhpd8V594wpmUStv6Dy/SnmP7jR+XXnE49z2ayHkSirlNiP4XQc15Zgk+p5gXGe5ZUQYu4yRtShqkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./myPageAssets/rolloverscript.js"></script>
   </head>
 
   <body>
     
-    <header class="scroll" data-rate=".9" data-direction="vertical">
+    <header class="scroll" data-rate=".85" data-direction="vertical">
       <div><h1 id="name">
         <span>G</span><span>u</span><span>y</span><span>M</span><span>o</span><span>r</span><span>g</span><span>a</span><span>n</span><span> B</span></h1></div>
+        <section  id ="Social">
+          <img class="activator" id="activator" src="https://s2.svgbox.net/loaders.svg?ic=bars&color=000000" alt="Click to expand">
+          <nav id="slideBar">
+              <ul id="slideOut">
+                  <li><a href="http://linkedin.com/in/guymorgan-b-ab116519b"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" alt="Link to Linkedin"></a></li>
+                  <li><a href="https://github.com/guymorganb"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=github&color=000000" alt="Link to Github"></a></li>
+                  <li><a href="http://GuyMorganB.tumblr.com"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=tumblr" alt="Link to Tumblr"></a></li> 
+                  <li><a href="https://www.instagram.com/guymorganb/"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=instagram&color=000000" alt="Link to Instagram"></a></li>
+                  <li><a href="https://mobile.twitter.com/GuyMorganB_"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=twitter&color=000" alt="Link to Twitter"></a></li>
+                  <li><a href="https://open.spotify.com/user/12151690322"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=spotify&color=000" alt="Link to Spotify"></a></li>
+              </ul>
+          </nav>
+        </section>
       <nav id="topNavBar">
         <div id="Nav">
           <ul>
@@ -23,10 +37,12 @@
             <li><a href="myPageAssets/(CurrentResume).docx" download> Download Resume</a></li> 
             <li><a href="#Contact">Contact</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Social Media">Social</a></li>
+            
           </ul>
         </div>
       </nav>
+     
+  
     </header>
 
     <div class="line">
@@ -35,15 +51,19 @@
           </svg>
 
     <main>
-      <section id="About-Me" class="scroll" data-rate=".01" data-direction="vertical">
+      <section id="About-Me" class="scroll" data-rate=".0" data-direction="vertical">
         <article id="image_rollovers">
-          <figure> <img src="./myPageAssets/First.jpeg"  alt="Picture of me in a sportcoat and tie, and a second image of me on a mountain" id="./myPageAssets/Third.jpeg" ></figure>
+          <figure> <img src="./myPageAssets/Third.jpeg"  alt="Picture of me in a sportcoat and tie, and a second image of me on a mountain" id="./myPageAssets/First.jpeg" ></figure>
           <div class="text">
               <div class="h2">
                   <b><h2>About Me</h2></b>
               </div>
               <div class="p">
+<<<<<<< Updated upstream
                   <p>In this section I will build a polished "About Me" section which will discuss, me, my background, my hobbies, my family, my values and talk a bit about me work experience. </p>
+=======
+                  <p>Hi, my name is Guy.</p>
+>>>>>>> Stashed changes
               </div>
           </div>
         </article>
@@ -53,7 +73,7 @@
         <figure> </figure>
       </section>
 
-    <section id="Portfolio" class="scroll" data-rate="-.05" data-direction="vertical">
+    <section id="Portfolio" class="scroll" data-rate=".05" data-direction="">
       <aside>
         <div class="portfolio">
           <b><h2>Portfolio</h2></b>
@@ -72,10 +92,10 @@
       </article>
       <article class="container">
         <div>
-          <a href="#" id="second-project-img">
-            <div id="label" data-id="This tooltip breifly explains this project">
-              <h3>Second Project Name</h3>
-              <span>Node</span>
+          <a href="https://guymorganb.github.io/Weather_App/" id="Weather App">
+            <div id="label" data-id="Responsive Weather App, offering a daily report and 6 day outlook.">
+              <h3>Weather App</h3>
+              <span>jQuery/JavaScript/BootStrap</span>
             </div>
           </a>
         </div>
@@ -111,6 +131,7 @@
         </div>
       </article>
     </section>
+<<<<<<< Updated upstream
     
     <section id="Contact" class="scroll" data-rate="-.02" data-direction="vertical">
       <div class="formcontainer">
@@ -153,12 +174,49 @@
               <li><a href="https://open.spotify.com/user/12151690322"><img class="icon" src="https://s2.svgbox.net/social.svg?ic=spotify&color=000" alt="Link to Spotify"></a></li>
           </ul>
       </nav>
+=======
+  </main>
+  <br>
+  
+
+    <footer>
+      <section id="Contact">
+        <div class="formcontainer">
+          <h2>Contact</h2>
+            <form id="typebox" action="mailto:guymorganb@gmail.com" method="get">
+              <a></a>
+              <div>
+                  <label for="email_address">E-Mail:</label>
+                  <input type="text" name="email_address" id="email_address">
+                  <span>*</span>
+              </div>
+              <div>
+                  <label for="phone">Phone:</label>
+                  <input type="text" name="phone" id="phone">
+                  <span>*</span>
+              </div>
+          
+              <div>
+                  <label for="comment">Comment:</label>
+                  <textarea name="comment" id="comment"></textarea>
+              </div>
+              <div id="buttons">
+                <label>&nbsp;</label>
+                  <input type="button" id="register" value="Send">
+                  <input type="button" id="reset_form" value="Reset">
+              </div>
+            </form>
+        </div>    
+      </section>
+ 
+>>>>>>> Stashed changes
     </footer>
 
     <!-- Add any custom JavaScript code here -->
    <!--<script src="./myPageAssets/formControls.js"></script>--> 
-    <script src="./myPageAssets/rolloverscript.js"></script>
+    
     <script src="./myPageAssets/slideOut.js"></script>
+    <script src="./myPageAssets/formControls.js"></script>
     <script src="./myPageAssets/scroll.js"></script>
     
   </body>

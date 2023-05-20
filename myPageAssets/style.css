@@ -10,30 +10,32 @@
     --third:rgb(126, 100, 98);
     --dark: #0D598B;
     --light: olive;
-    --elshadow: 0 0 3em #63AAC0, -10px 10px 2em olive;
+    --elshadow: 0 0 3em #63AAC0, -10px 10px 2em #0D598B;;
     --backdrop: linear-gradient(rgb(126, 100, 98), #0D598B 100%);
     --mainBackdrop: linear-gradient(#63AAC0 0%, #32a1ce 100%);
   }
 body{
-    background: linear-gradient(rgb(126, 100, 98) 0%, #0D598B 100%);
+    background: gray;
 
 }
 header{ /* The backdrop header */
   display: flex;
-  padding: 20px 0px 20px 0;
-  flex-direction: row-reverse;
+  padding: 20px 0px 0px 0;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: top;
+  
 }
 header h1{ /* Name in header */
-  background: linear-gradient(rgb(126, 100, 98) 0%, #0D598B 100%);
+  background: var(--backdrop);;
   line-height: 2;
   padding: 0 30px 0 30px;
   margin: 0 20px 0 0;
-  color: var(--light);
+  color: var(--first);
   border-radius: 60px / 150px;
   border: 3px solid var(--second);
-  box-shadow: 0 0 3em #63AAC0, -10px 10px 2em olive;
+ 
 }
 header span{
   display: inline-block;
@@ -48,31 +50,15 @@ header span{
     text-shadow: 0 0 30px rgba(0,0,0,0);
     transform: translateY(20px);
   }
-  20%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
-    transform: translateX(30px);
-  }
-  30%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
-    transform: translateX(-20px);
-    transform: translateY(-20px);
-  }
-  40%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
-    transform: translateY(20px);
-    transform: translateX(-30px);
-  }
+
+
   50%{
     text-shadow: 0 0 30px rgba(0,0,0,0.30);
     transform: translateX(20px);
     transform: translateY(20px);
     
   }
-  60%{
-    text-shadow: 0 0 30px rgba(0,0,0,0);
-    transform: translateY(-20px);
-    transform: translateX(30px);
-  }
+
   70%{
     text-shadow: 0 0 30px rgba(0,0,0,0);
     transform: translateX(-30px);
@@ -123,11 +109,10 @@ header span:nth-child(10){
 	box-shadow: #000 0px 0px 10px 0px;
 	margin: 0 auto;
 	border-radius: 60px / 150px;
-  box-shadow: var(--elshadow);
   border: 3px solid var(--second);
 }
 #Nav ul{
-	margin: 0 15px 0 0;
+	margin: 0 0px 0 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -135,7 +120,7 @@ header span:nth-child(10){
   display: flex;
   flex-wrap: wrap;
 	list-style: none;
-	padding: 22px 25px 0 28px ;
+	padding: 22px 10px 0 15px ;
 	
 }
 #Nav ul li a{
@@ -158,11 +143,9 @@ main{
 
 section#About-Me{   /* container for About-Me section */
   overflow: hidden;
-  border: 5px solid var(--light);
   border-radius: 0 60px / 200px; 
   box-shadow: var(--elshadow);
   margin: 0 0 25px 0;
-  
 }
 #image_rollovers{ /* image and section container */
   border-block-start: thick double #0D598B;
@@ -203,7 +186,7 @@ b h2{    /* the about me letters */
   margin: 0 10px 0 10px;
   border-block-start: thick double #0D598B;
   display: flex;
-  flex-flow: row-reverse;
+  flex-flow: row;
   flex-wrap: wrap;
   min-height: 900px;
   /*background: transparentvar(--backdrop);*/ 
@@ -226,56 +209,58 @@ article{
   flex: 0 2 700px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
-  filter: invert(1);
+  z-index: 1;
   
 }
 .container:nth-of-type(2){
   flex: 0 0 300px;
-  background-image: url("./ComingSoon.jpeg");
-  background-position: center;
-  filter: invert(1);
+  background-image: url("./WeatherApp.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 .container:nth-of-type(3){
   flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
-  filter: invert(1);
+  z-index: 1;
 }
 .container:nth-of-type(4){
   flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
-  filter: invert(1);
+  z-index: 1;
   
 }
 .container:nth-of-type(5){
   flex: 0 0 300px;
   background-image: url("./ComingSoon.jpeg");
   background-position: center;
-  filter: invert(1);
+  z-index: 1;
   
 }
 #label{
   margin-top: 25px;
-  border: 5px solid var(--third);
+  padding:3px;
+  border: 2px solid var(--third);
   border-left: none;
   border-radius: 0 15px 15px 0;
-  background-color: var(--second);
-  color: rgb(255, 0, 0);
+  background-color: #0D598B;
+  color: var(--first);
 }
 #label:hover{
   text-decoration: none;
   cursor: pointer;
-  color:var(--dark);
+  color:whitesmoke;
 }
 #label:after{
   border-radius: 9px;
   background: var(--backdrop);
-  color: white;
+  color: rgb(206, 203, 232);
   padding: 2px;
   border: 1px solid #eee;
   box-shadow: var(--elshadow) ;
-  opacity: 0;
+  opacity: 1;
   transition: 1s;
   margin-left: 25px;
 }
@@ -337,30 +322,32 @@ textarea {          /* the sizing of the text area */
   margin-bottom: 2em;
   text-align: left;
 }
-footer{
+#Social{
     display: flex;
     place-content: center;
     margin-bottom: 50px;
     
 }
-footer #activator {
+section #activator {
   padding: 1em;
   border: 3px solid black;
-  box-shadow: var(--elshadow);
-  border-radius: 100%;
-  color: var(--light)
+  box-shadow: var(--first);
+  border-radius: 100%;  
 }
 .activator:hover{
   cursor: pointer;
-  background-color: var(--light);
+  background-color: var(--first);
+  
 }
-footer img{            /* resize the icons */
+section img{            /* resize the icons */
   width:100%;
   max-width: 45px;
+  
 }
 .activator{
   width:100%;
   max-width: 90px;
+  
 }
 #slideBar{
   background:linear-gradient(rgb(126, 100, 98), #0D598B 100%);
@@ -376,7 +363,7 @@ footer img{            /* resize the icons */
   flex-wrap: wrap;
 }
 #slideOut li a:hover{
-  background:olive; ;
+  background:var(--first); ;
 }
 #slideOut li a{
   display: block;
@@ -388,6 +375,10 @@ footer img{            /* resize the icons */
 #slideOut img{
   opacity: 0;
   transform: translate(-10px);
+}
+footer{
+  margin-top: 100px;
+  height: calc(100vh - 600px);
 }
 
 @media screen and (max-width: 407px){
