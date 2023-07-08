@@ -1,9 +1,11 @@
 var card = document.getElementById('activator')
 var tl = gsap.timeline({defaults: {ease: "power2.inOut"}});
 
-var toggle = false;
+var toggle = true;
 //let node = $('footer').textContent;
-
+document.addEventListener('DOMContentLoaded', ()=>{
+    tl.play();
+})
 card.addEventListener('click', () => {
     toggle = !toggle;                           // set toggle state so it switches
     

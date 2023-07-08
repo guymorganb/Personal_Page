@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             img.src = newURL;
         });
     
-        img.addEventListener("mouseout", function() {
+        document.addEventListener("click", function() {
             img.style.transition = "all 0.5s ease-in-out";
             img.style.transformStyle = "preserve-3d";
             img.style.transform = "rotateY(0deg)";
